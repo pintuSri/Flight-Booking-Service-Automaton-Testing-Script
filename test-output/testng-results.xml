@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-04T19:29:34 IST" name="Flight Booking Service Testing" finished-at="2024-12-04T19:29:45 IST" duration-ms="11926">
+    <groups>
+    </groups>
+    <test started-at="2024-12-04T19:29:34 IST" name="LoginTestCase" finished-at="2024-12-04T19:29:45 IST" duration-ms="11926">
+      <class name="TestCases.LoginTest">
+        <test-method is-config="true" signature="luanchApp()[pri:0, instance:TestCases.LoginTest@399f45b1]" started-at="2024-12-04T19:29:34 IST" name="luanchApp" finished-at="2024-12-04T19:29:38 IST" duration-ms="4904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- luanchApp -->
+        <test-method signature="checkUserLogin(java.lang.String,java.lang.String)[pri:0, instance:TestCases.LoginTest@399f45b1]" started-at="2024-12-04T19:29:39 IST" name="checkUserLogin" finished-at="2024-12-04T19:29:45 IST" duration-ms="6759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[interia@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dsop@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserLogin -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestCases.LoginTest@399f45b1]" started-at="2024-12-04T19:29:45 IST" name="closeApp" finished-at="2024-12-04T19:29:45 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- TestCases.LoginTest -->
+    </test> <!-- LoginTestCase -->
+  </suite> <!-- Flight Booking Service Testing -->
+</testng-results>

@@ -1,0 +1,9 @@
+<suite name="Flight Booking Service Testing">
+	<test name="LoginTestCase">
+	<parameter name="userName" value="interia@email.com"></parameter>
+	<parameter name="Password" value="Dsop@123"></parameter>
+		<classes>
+			<class name="TestCases.LoginTest"></class>
+		</classes>
+	</test>
+</suite>
