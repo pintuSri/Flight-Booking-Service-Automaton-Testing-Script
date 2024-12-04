@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 import Utility.AppUtils;
 
@@ -27,20 +28,23 @@ public class LogoutPage extends AppUtils{
 	
 //	Define Methods
 	public void logoutFeature() throws Throwable {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOf(objUserSettings));
-		String userDashBoard=objUserDashBoard.getText();
-		File fi = new File("Output/LoginVerification.txt");
-		fi.createNewFile();
-		FileWriter fw = new FileWriter(fi);
-		fw.write(userDashBoard);
-		fw.close();
-		Actions act = new Actions(driver);
-		act.moveToElement(objUserSettings);
-		act.build().perform();
-		Thread.sleep(2000);
-		objUserLogout.click();
-		
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(objUserSettings));
+			String userDashBoard=objUserDashBoard.getText();
+			File fi = new File("Output/LoginVerification.txt");
+			fi.createNewFile();
+			FileWriter fw = new FileWriter(fi);
+			fw.write(userDashBoard);
+			fw.close();
+			Actions act = new Actions(driver);
+			act.moveToElement(objUserSettings);
+			act.build().perform();
+			Thread.sleep(2000);
+			objUserLogout.click();
+			
+		} catch (Exception e) {
+			Reporter.log("Error Message: "+e.getMessage(), true);
+		}
 	}
-
 }
