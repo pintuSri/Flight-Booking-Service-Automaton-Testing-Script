@@ -2,16 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Flight Booking Service Testing]">
   <test thread-count="5" name="LoginTestCase(failed)">
+    <parameter name="Month" value="December"/>
+    <parameter name="Year" value="2024"/>
     <parameter name="userName" value="interia@email.com"/>
+    <parameter name="Date" value="21"/>
     <parameter name="Password" value="Dsop@123"/>
     <classes>
-      <class name="TestCases.LoginTest">
+      <class name="TestCases.SelectSourceAndDestinationPlaceTest">
         <methods>
-          <include name="checkUserLogin" invocation-numbers="0"/>
           <include name="closeApp"/>
-          <include name="luanchApp"/>
+          <include name="launchApp"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="FlightRoute"/>
         </methods>
-      </class> <!-- TestCases.LoginTest -->
+      </class> <!-- TestCases.SelectSourceAndDestinationPlaceTest -->
     </classes>
   </test> <!-- LoginTestCase(failed) -->
 </suite> <!-- Failed suite [Flight Booking Service Testing] -->

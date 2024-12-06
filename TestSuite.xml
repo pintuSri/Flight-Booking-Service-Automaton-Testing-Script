@@ -1,9 +1,21 @@
 <suite name="Flight Booking Service Testing">
-	<test name="LoginTestCase">
+	<test name="TestCases">
 	<parameter name="userName" value="interia@email.com"></parameter>
 	<parameter name="Password" value="Dsop@123"></parameter>
+	<parameter name="Month" value="December"></parameter>
+	<parameter name="Year" value="2024"></parameter>
+	<parameter name="Date" value="21"></parameter>
+	<parameter name="From" value="Hyderabad"></parameter>
+	<parameter name="To" value="Kolkatha"></parameter>
+	<parameter name="AirlineName" value="King Fisher Airlines"></parameter>
+	<parameter name="PassengerName" value="Sridhar Parutabad"></parameter>
+	<parameter name="FlightClass" value="Business"></parameter>
+	<parameter name="Tickets" value="2"></parameter>
 		<classes>
 			<class name="TestCases.LoginTest"></class>
+			<class name="TestCases.FlightDateTest"></class>
+			<class name="TestCases.SelectFlightRouteTest"></class>
+			<class name="TestCases.BookFlightTest"></class>
 		</classes>
 	</test>
 </suite>
